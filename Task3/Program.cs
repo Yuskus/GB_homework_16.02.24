@@ -12,9 +12,9 @@ void Main()
 
 int[] ArrayGeneration(int minRange, int maxRange)
 {
-    if (!Int32.TryParse(Console.ReadLine(), out int size)) return new int[0];
+    if (!int.TryParse(Console.ReadLine(), out int size)) return [];
     int[] array = new int[size];
-    Random rand = new Random();
+    Random rand = new();
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = rand.Next(minRange, maxRange);

@@ -15,7 +15,7 @@ string InputInteger()
     {
         input = Console.ReadLine() ?? " ";
         if (input == "q") return "Вы ввели 'q'. ";
-        else if (Int32.TryParse(input, out int result))
+        else if (int.TryParse(input, out int result))
         {
             if (IsDigitsSumAreEven(input, result)) return "Вы ввели число, сумма цифр которого четная. ";
         }
